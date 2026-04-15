@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Input */
+input {
+    width: 70%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Button colors */
+button:nth-of-type(1) {
+    background: #ff9800;
+    color: white;
+}
+
+button:nth-of-type(2) {
+    background: #4caf50;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Weather Result Card */
+#weatherResult {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+/* Saved Data Section */
+#savedData {
+    margin-top: 20px;
+}
+
+/* Saved Cards */
+#savedData div {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Buttons inside saved cards */
+#savedData button {
+    background: #f44336;
+    color: white;
+}
+
+/* View button */
+#savedData button:first-of-type {
+    background: #2196f3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+}.weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.weather-table th,
+.weather-table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.weather-table th {
+    background: rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.weather-table tr:nth-child(even) {
+    background: rgba(255,255,255,0.1);
+}
+
+.weather-table tr:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Buttons inside table */
+.weather-table button {
+    padding: 6px 10px;
+    margin: 2px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* View button */
+.weather-table button:first-child {
+    background: #2196f3;
+}
+
+/* Delete button */
+.weather-table button:last-child {
+    background: #f44336;
+}
